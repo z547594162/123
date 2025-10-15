@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Video</title>
+    <style>
+        /* 用于使页面内容居中 */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* 背景颜色，可以根据需要修改 */
+        }
+        /* 确保视频不超过页面大小 */
+        video {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Here is my video</h1>
-    <video width="640" height="360" controls>
-        <source src="video.mp4.MP4" type="video/mp4">
+    <video controls>
+        <source src="https://www.yoursite.com/video.mp4.MP4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </body>
